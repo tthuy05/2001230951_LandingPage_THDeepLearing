@@ -175,8 +175,8 @@ a {
 }
 
 .avatar-ring {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background: var(--accent-gradient);
   padding: 3px;
@@ -209,19 +209,13 @@ a {
   animation: avatar-breathe 6s ease-in-out infinite;
 }
 
-.avatar-text {
+.avatar-img {
   width: calc(100% - 6px);
   height: calc(100% - 6px);
   border-radius: 50%;
-  background: rgba(6, 6, 16, 0.9);
-  backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.02em;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 @keyframes avatar-pulse {
@@ -480,12 +474,8 @@ a {
   }
 
   .avatar-ring {
-    width: 80px;
-    height: 80px;
-  }
-
-  .avatar-text {
-    font-size: 1.75rem;
+    width: 100px;
+    height: 100px;
   }
 
   .hero__chip {
